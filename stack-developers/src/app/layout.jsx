@@ -1,14 +1,14 @@
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import Header from '@/src/layouts/header';
-import Footer from '@/src/layouts/footer';
+import Header from '@/src/ui/components/header/header';
+import Footer from '@/src/ui/components/footer/footer';
 
 export default function RootLayout({ children }) {
   return (
     <html>
-      <body> 
+      <body>
         <Header />
-        {children}  
+        {children}
         <Footer />
       </body>
     </html>
