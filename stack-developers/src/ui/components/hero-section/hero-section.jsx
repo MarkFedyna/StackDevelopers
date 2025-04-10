@@ -11,7 +11,7 @@ export default function Hero() {
         'flex justify-between bg-[#F8F4E3] items-center text-center border-b-[#333333] border-b-1  '
       }
     >
-      <div className='flex flex-col'>
+      <div className='flex flex-col w-full justify-center'>
         <div>
           <h1>Допоможи знайти дім безпритульній тварині</h1>
           <p>
