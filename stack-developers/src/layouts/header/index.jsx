@@ -1,11 +1,10 @@
 import './header.styles.css'
 import Link from "next/link";
-import {SquareUserRound, Heart} from 'lucide-react'
-import Button from "@/src/ui/button";
+import {SquareUserRound, Heart, Search} from 'lucide-react'
 
 function Header() {
   return (
-    <header className="flex justify-between items-center px-12">
+    <header className="header flex justify-between items-center px-12">
         <h1>Дай лапу</h1>
         <nav>
             <ul className={'flex gap-9'}>
@@ -16,9 +15,13 @@ function Header() {
             </ul>
 
         </nav>
-        <section className={'flex gap-1.5'}>
-            <Link href={'#'}><Heart size={32} /></Link>
-            <Link href={'#'}><SquareUserRound  size={32}/></Link>
+        <section className={'header__icons flex gap-6'}>
+            <Link href={'#'} className=''><Search  size={32}/></Link>
+            <section className={'flex gap-1.5'}>
+                <Link href={'#'}><Heart size={32} /></Link>
+                <Link href={'#'}><SquareUserRound  size={32}/></Link>
+            </section>
+            
         </section>
     </header>
   )
