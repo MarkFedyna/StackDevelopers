@@ -1,6 +1,9 @@
 import Button from "@/src/ui/button";
 import Image from "next/image";
 import dog1 from "@/public/dog1.png";
+import './app.style.css'
+
+
 
 function page() {
   return (
@@ -8,8 +11,8 @@ function page() {
       <article className={'flex items-center border-b-[#333333] border-b-1'}>
         <section className={'flex content-between items-center text-center flex-col '}>
           <header>
-            <h1>Допоможи знайти дім безпритульній тварині</h1>
-            <p>Щодня сотні тварин шукають тепло, турботу та новий дім.
+            <h1 className={'font-bold'}>Допоможи знайти дім безпритульній тварині</h1>
+            <p className={'font-medium'}>Щодня сотні тварин шукають тепло, турботу та новий дім.
               Допоможи їм зробити перший крок до щасливого життя.</p>
           </header>
           <section className={'mt-23.5 w-full flex justify-around'}>

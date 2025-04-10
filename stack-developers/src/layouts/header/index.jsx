@@ -11,7 +11,7 @@ function Header() {
                 <li><Link  href="#">Оголошення</Link></li>
                 <li><Link  href="#">Про нас</Link></li>
                 <li><Link  href="#">Як допомогти</Link></li>
-                <li><Link className={'text-[#BC4749]'}  href="#">Подати  ініціативу</Link></li>
+                <li><Link  href="#">Подати  ініціативу</Link></li>
             </ul>
 
         </nav>
