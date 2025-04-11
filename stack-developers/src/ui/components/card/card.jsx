@@ -14,7 +14,7 @@ function Card({ imageSrc, name, description }) {
   return (
     <div
       className={
-        'p-9 bg-[#BAC095] flex flex-col items-start rounded-3xl flex-wrap w-[303px]'
+        'p-9 bg-[#BAC095] flex flex-col items-start rounded-3xl flex-wrap w-[303px] transition-transform transform hover:translate-y-[-5px]'
       }
     >
       <Image
@@ -30,7 +30,7 @@ function Card({ imageSrc, name, description }) {
           <p className={'text-base'}>{description}</p>
         </div>
         <div className='flex items-center gap-2'>
-          <Button className={'bg-[#BC4749] px-3 py-2 rounded-10'}>
+          <Button className={'bg-[#636B2F] px-3 py-2 rounded-10 hover:bg-[#D4DE95] hover:text-[#3D4127] transition-all duration-300 ease-out'}>
             Детальніше
           </Button>
           <svg
@@ -43,7 +43,7 @@ function Card({ imageSrc, name, description }) {
           >
             <path
               d='M16.0013 6.03804C19.1333 3.22667 23.9733 3.32 26.9901 6.34315C30.007 9.36629 30.1106 14.1827 27.3048 17.324L15.9998 28.6467L4.69513 17.324C1.88936 14.1827 1.99424 9.35868 5.00977 6.34315C8.02872 3.3242 12.8602 3.22249 16.0013 6.03804Z'
-              fill={isActive ? '#636B2F' : '#FFF'}
+              fill={isActive ? 'red' : '#FFF'}
             />
           </svg>
         </div>
