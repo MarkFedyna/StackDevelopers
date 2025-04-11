@@ -1,45 +1,18 @@
+import Card from '../card/card';
 
-import dog1 from '@/public/dog2.png';
-import Card from "@/src/ui/components/card/card";
-
-const cardData = [
-    {
-        name: 'dog',
-        description: 'Собака, 2 роки',
-        image: dog1,
-        id: '12ex74k',
-
-    },
-    {
-        name: 'dog',
-        description: 'Собака, 2 роки',
-        image: dog1,
-        id: '12ex4k',
-
-    },
-    {
-        name: 'dog',
-        description: 'Собака, 2 роки',
-        image: dog1,
-        id: '12ex44k',
-
-    },
-    {
-        name: 'dog',
-        description: 'Собака, 2 роки',
-        image: dog1,
-        id: '12ex34k',
-
-    },
-]
-
-function CardList() {
-    
+function CardList({ cards }) {
   return (
-    <div className={'flex w-full justify-around'}>
-        {cardData.map(el => <Card name={el.name} imageSrc={el.image} description={el.description} key={el.id} />)}
+    <div className='flex flex-cols-1 md:flex-cols-2 lg:flex-cols-3 gap-9'>
+      {cards.map((card) => (
+        <Card
+          key={card.id}
+          imageSrc={card.image}
+          name={card.name}
+          description={card.description}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
-export default CardList
+export default CardList;
