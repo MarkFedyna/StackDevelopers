@@ -1,4 +1,5 @@
-import CardList from "../card-list/card-list"
+import CardList from "@/src/ui/components/card-list/card-list";
+
 
 function PosterSection() {
   return (

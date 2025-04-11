@@ -1,7 +1,6 @@
-'use client'
 
-import Card from "../card/card"
 import dog1 from '@/public/dog2.png';
+import Card from "@/src/ui/components/card/card";
 
 const cardData = [
     {

@@ -1,7 +1,6 @@
 import Image from "next/image"
+import Button from "@/src/ui/components/button/button";
 
-
-import Button from "../button/button"
 
 function Card({imageSrc, name, description  }) {
   return (
@@ -14,11 +13,11 @@ function Card({imageSrc, name, description  }) {
             className={'rounded-4xl'}
         />
         <section className={'flex flex-col gap-14'}>
-        <header className={'text-left'}>
-            <h2 className={'text-3xl text-[#6a994e] font-bold'}>{name}</h2>
-            <p className={'text-base'}>{description}</p>
-        </header>
-          <Button className={'bg-[#BC4749] px-5 py-3 rounded-lg'}>Подати заявку</Button>
+          <header className={'text-left'}>
+              <h2 className={'text-3xl text-[#6a994e] font-bold'}>{name}</h2>
+              <p className={'text-base'}>{description}</p>
+          </header>
+        <Button className={'bg-[#BC4749] px-5 py-3 rounded-lg'}>Подати заявку</Button>
         </section>
     </article>
   )
