@@ -12,7 +12,7 @@ const paths = [
 function Header() {
   return (
     <header className=' bg-[#A7C957] h-[70px] flex justify-between items-center px-12'>
-      <Link href={'/'} className='font-extrabold text-[30px]'>
+      <Link href={'/'} className='font-extrabold font-[Alegreya] text-3xl'>
         Дай лапу
       </Link>
       <nav className='flex gap-5'>

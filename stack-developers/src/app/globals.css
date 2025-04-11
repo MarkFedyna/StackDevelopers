@@ -1,8 +1,26 @@
 @import "tailwindcss";
+
 h1 {
   font-size: 30px;
 }
 
 p {
   font-size: 20px;
+}
+
+body, html {
+  /* background-color: #F8F4E3; */
+  height: 100%;
+  width: 100%;
+}
+
+body > article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+main {
+  font-family: 'Nunito', sans-serif;
 }
