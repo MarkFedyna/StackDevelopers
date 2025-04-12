@@ -25,7 +25,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 
-const RegisterModule = () => {
+const RegisterModule = ({ onRegister }) => {
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -40,6 +40,11 @@ const RegisterModule = () => {
       ...prev,
       [name]: type === 'checkbox' ? checked : value,
     }));
+  };
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    onRegister();
   };
 
   return (
@@ -69,7 +74,7 @@ const RegisterModule = () => {
                 Введіть ваші дані для створення облікового запису
               </DialogDescription>
             </DialogHeader>
-            <form className='space-y-4'>
+            <form onClick={handleChange} className='space-y-4'>
               <div className='space-y-2'>
                 <Label htmlFor='name'>Ім’я користувача</Label>
                 <Input

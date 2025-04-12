@@ -10,30 +10,28 @@ const paths = [
 
 function Header() {
   return (
-    <header className=' bg-[#636B2F] h-[70px] flex justify-between items-center px-12'>
+    <header className='bg-[#636B2F] h-[70px] flex justify-between items-center px-6 sm:px-12'>
       <Link
         href={'/'}
-        className='font-extrabold text-[#BAC095] font-[Alegreya] text-3xl'
+        className='font-extrabold text-[#BAC095] font-[Alegreya] text-2xl sm:text-3xl'
       >
         Дай Лапу
       </Link>
-      <nav className='flex gap-5'>
-        {paths.map((item) => {
-          return (
-            <Link
-              key={item.path}
-              href={item.path}
-              className='font-inter text-[20px] font-bold text-[#BAC095] hover:opacity-60 transition-all duration-300 ease-out'
-            >
-              {item.name}
-            </Link>
-          );
-        })}
+
+      <nav className='hidden sm:flex gap-6'>
+        {paths.map((item) => (
+          <Link
+            key={item.path}
+            href={item.path}
+            className='font-inter text-sm sm:text-lg font-bold text-[#BAC095] hover:opacity-60 transition-all duration-300 ease-out'
+          >
+            {item.name}
+          </Link>
+        ))}
       </nav>
 
-      <div className={'flex gap-6'}>
-        <Link href={'/search'} className=''>
-          {/* <Search width={32} height={32} /> */}
+      <div className='lg:flex gap-6 hidden'>
+        <Link href='/search'>
           <svg
             width='32'
             height='32'
@@ -57,9 +55,8 @@ function Header() {
           </svg>
         </Link>
 
-        <div className={'flex gap-1.5'}>
-          <Link href={'/liked'}>
-            {/* <Heart width={32} height={32} /> */}
+        <div className='flex gap-1.5'>
+          <Link href='/liked'>
             <svg
               width='32'
               height='32'
@@ -73,6 +70,7 @@ function Header() {
               />
             </svg>
           </Link>
+
           <RegisterModule />
         </div>
       </div>
