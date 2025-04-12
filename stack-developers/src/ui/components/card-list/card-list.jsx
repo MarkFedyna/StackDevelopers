@@ -1,8 +1,8 @@
-import Card from "../card/card";
+import Card from '../card/card';
 
 function CardList({ cards }) {
   return (
-    <div className="flex flex-cols-1 flex-wrap justify-center md:flex-cols-2 lg:flex-cols-3 gap-9">
+    <div className='flex flex-cols-1 md:flex-cols-2 lg:flex-cols-3 gap-9'>
       {cards.map((card) => (
         <Card
           key={card.id}

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function AboutUsPage() {
   return (
     <main className='bg-white text-[#3D4127]'>
@@ -49,18 +51,18 @@ export default function AboutUsPage() {
           тваринки ❤️
         </p>
         <div className='mt-6 flex flex-col sm:flex-row justify-center gap-4'>
-          <a
+          <Link
             href='/how-to-help'
             className='bg-white text-[#3D4127] px-6 py-3 rounded-xl font-semibold hover:bg-[#D4DE95] transition-all duration-300 ease-out'
           >
             Як допомогти
-          </a>
-          <a
+          </Link>
+          <Link
             href='/send-initiative'
             className='bg-white text-[#3D4127] px-6 py-3 rounded-xl font-semibold hover:bg-[#D4DE95] transition-all duration-300 ease-out'
           >
             Подати ініціативу
-          </a>
+          </Link>
         </div>
       </section>
     </main>
