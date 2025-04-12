@@ -46,13 +46,13 @@ function Header() {
               cy='14.6667'
               r='9.33333'
               stroke='#BAC095'
-              stroke-width='3'
+              strokeWidth='3'
             />
             <path
               d='M26.6666 26.6667L22.6666 22.6667'
               stroke='#BAC095'
-              stroke-width='3'
-              stroke-linecap='round'
+              strokeWidth='3'
+              strokeLinecap='round'
             />
           </svg>
         </Link>
