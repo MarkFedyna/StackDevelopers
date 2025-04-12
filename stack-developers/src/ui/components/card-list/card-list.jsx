@@ -9,6 +9,7 @@ function CardList({ cards }) {
           imageSrc={card.image}
           name={card.name}
           description={card.description}
+          id={card.id}
         />
       ))}
     </div>

@@ -3,8 +3,9 @@
 import Image from 'next/image';
 import Button from '@/src/ui/components/button/button';
 import { useState } from 'react';
+import Link from "next/link";
 
-function Card({ imageSrc, name, description }) {
+function Card({ imageSrc, name, description, id }) {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
@@ -30,9 +31,11 @@ function Card({ imageSrc, name, description }) {
           <p className={'text-base'}>{description}</p>
         </div>
         <div className='flex items-center gap-2'>
-          <Button className={'bg-[#636B2F] px-3 py-2 rounded-10 hover:bg-[#D4DE95] hover:text-[#3D4127] transition-all duration-300 ease-out'}>
-            Детальніше
-          </Button>
+          <Link href={'/animals/'+id}>
+            <Button className={'bg-[#636B2F] px-3 py-2 rounded-10 hover:bg-[#D4DE95] hover:text-[#3D4127] transition-all duration-300 ease-out'}>
+              Детальніше
+            </Button>
+          </Link>
           <svg
             onClick={handleClick}
             width='32'

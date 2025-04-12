@@ -1,5 +1,6 @@
 import Button from '@/src/ui/components/button/button';
 import Image from 'next/image';
+import Link from "next/link";
 import dog1 from '@/public/dog1.png';
 
 export default function Hero() {
@@ -14,12 +15,14 @@ export default function Hero() {
           зробити перший крок до щасливого життя.
         </p>
         <div className='flex gap-6 mt-4'>
-          <Button
-            className='bg-[#636B2F] px-5 py-2 hover:bg-[#D4DE95] hover:text-[#3D4127] transition-all duration-300 ease-out
+          <Link href={'/create-animal-post'}>
+            <Button
+                className='bg-[#636B2F] px-5 py-2 hover:bg-[#D4DE95] hover:text-[#3D4127] transition-all duration-300 ease-out
 '
-          >
-            Створити оголошення
-          </Button>
+            >
+              Створити оголошення
+            </Button>
+          </Link>
           <Button className='bg-[#636B2F] px-5 py-2 hover:bg-[#D4DE95] hover:text-[#3D4127] transition-all duration-300 ease-out'>
             Задонатити
           </Button>
