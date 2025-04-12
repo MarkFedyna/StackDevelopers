@@ -1,4 +1,4 @@
-'use client'; // якщо використовуєш Next.js App Router
+'use client';
 
 import { useEffect, useState } from 'react';
 import CardList from '@/src/ui/components/card-list/card-list';

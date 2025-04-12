@@ -1,8 +1,9 @@
+import Button from '@/src/ui/components/button/button';
+
 export default function SendInitiativePage() {
   return (
     <main className='bg-white text-[#3D4127]'>
-      {/* Header */}
-      <section className='bg-[#BAC095] py-16 px-4 md:px-8 text-center'>
+      <div className='bg-[#BAC095] py-16 px-4 md:px-8 text-center'>
         <h1 className='text-4xl md:text-5xl font-extrabold'>
           Подати ініціативу
         </h1>
@@ -10,10 +11,9 @@ export default function SendInitiativePage() {
           Якщо ти хочеш допомогти або маєш ідею, як покращити життя тварин —
           залиш заявку.
         </p>
-      </section>
+      </div>
 
-      {/* Form */}
-      <section className='py-12 px-4 md:px-8 max-w-3xl mx-auto'>
+      <div className='py-12 px-4 md:px-8 max-w-3xl mx-auto'>
         <form className='space-y-6 bg-[#F0F4E1] p-6 md:p-10 rounded-xl shadow-lg'>
           <div>
             <label htmlFor='name' className='block font-semibold mb-1'>
@@ -58,15 +58,15 @@ export default function SendInitiativePage() {
           </div>
 
           <div className='text-center'>
-            <button
+            <Button
               type='submit'
-              className='bg-[#6A994E] hover:bg-[#D4DE95] hover:text-[#3D4127] text-white font-semibold px-6 py-3 rounded-xl transition'
+              className='bg-[#6A994E] hover:bg-[#D4DE95] hover:text-[#3D4127] text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 ease-out'
             >
               Надіслати
-            </button>
+            </Button>
           </div>
         </form>
-      </section>
+      </div>
     </main>
   );
 }

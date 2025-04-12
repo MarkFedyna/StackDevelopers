@@ -3,26 +3,23 @@ import Link from 'next/link';
 export default function AboutUsPage() {
   return (
     <main className='bg-white text-[#3D4127]'>
-      {/* Hero Section */}
-      <section className='bg-[#F0F4E1] py-16 px-4 sm:py-20 sm:px-8 text-center'>
+      <div className='bg-[#F0F4E1] py-16 px-4 sm:py-20 sm:px-8 text-center'>
         <h1 className='text-3xl sm:text-5xl font-extrabold'>Про нас</h1>
         <p className='mt-4 text-lg text-[#636B2F] max-w-2xl mx-auto'>
           Ми — команда, яка допомагає безпритульним тваринам знайти дім та
           турботу.
         </p>
-      </section>
+      </div>
 
-      {/* Mission Section */}
-      <section className='py-12 sm:py-16 px-4 sm:px-8 text-center'>
+      <div className='py-12 sm:py-16 px-4 sm:px-8 text-center'>
         <h2 className='text-2xl sm:text-3xl font-bold'>Наша місія</h2>
         <p className='mt-4 text-lg text-[#636B2F] max-w-3xl mx-auto'>
           Ми прагнемо дати шанс кожній безпритульній тварині на краще життя,
           знайшовши їй люблячу родину.
         </p>
-      </section>
+      </div>
 
-      {/* What We Do */}
-      <section className='py-12 sm:py-16 px-4 sm:px-8 bg-[#F0F4E1]'>
+      <div className='py-12 sm:py-16 px-4 sm:px-8 bg-[#F0F4E1]'>
         <h2 className='text-2xl sm:text-3xl font-bold text-center'>
           Чим ми займаємось
         </h2>
@@ -32,19 +29,17 @@ export default function AboutUsPage() {
           <li>📢 Поширюємо інформацію про відповідальне ставлення</li>
           <li>💸 Організовуємо благодійні збори та події</li>
         </ul>
-      </section>
+      </div>
 
-      {/* Optional: Team */}
-      <section className='py-12 sm:py-16 px-4 sm:px-8 text-center'>
+      <div className='py-12 sm:py-16 px-4 sm:px-8 text-center'>
         <h2 className='text-2xl sm:text-3xl font-bold'>Наша команда</h2>
         <p className='mt-4 text-lg text-[#636B2F] max-w-2xl mx-auto'>
           Ми — волонтери, дизайнери, розробники та просто небайдужі люди, які
           об'єднались заради спільної мети.
         </p>
-      </section>
+      </div>
 
-      {/* CTA Section */}
-      <section className='bg-[#F0F4E1] py-12 sm:py-16 px-4 sm:px-8 text-center'>
+      <div className='bg-[#F0F4E1] py-12 sm:py-16 px-4 sm:px-8 text-center'>
         <h2 className='text-2xl sm:text-3xl font-bold'>Хочеш допомогти?</h2>
         <p className='mt-4 text-lg max-w-xl mx-auto text-[#636B2F]'>
           Приєднуйся до нашої ініціативи — допоможи знайти дім для ще однієї
@@ -64,7 +59,7 @@ export default function AboutUsPage() {
             Подати ініціативу
           </Link>
         </div>
-      </section>
+      </div>
     </main>
   );
 }
