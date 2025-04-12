@@ -24,6 +24,7 @@ import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { useRouter } from 'next/navigation';
 
 const RegisterModule = ({ onRegister }) => {
   const [form, setForm] = useState({
@@ -33,6 +34,10 @@ const RegisterModule = ({ onRegister }) => {
     acceptTerms: false,
   });
   const [showPassword, setShowPassword] = useState(false);
+  const [open, setOpen] = useState(false);
+
+
+  const router = useRouter()
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -44,14 +49,16 @@ const RegisterModule = ({ onRegister }) => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    onRegister();
+    router.push('/profile')
+    setOpen(false); 
   };
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button
           variant='ghost'
+          onClick={() => setOpen(true)}
           className={
             'bg-white text-[#BAC095] hover:bg-[#BAC095] hover:text-white transition-all duration-300 ease-out'
           }
@@ -74,7 +81,7 @@ const RegisterModule = ({ onRegister }) => {
                 Введіть ваші дані для створення облікового запису
               </DialogDescription>
             </DialogHeader>
-            <form onClick={handleChange} className='space-y-4'>
+            <form onSubmit={handleRegister} onClick={handleChange} className='space-y-4'>
               <div className='space-y-2'>
                 <Label htmlFor='name'>Ім’я користувача</Label>
                 <Input

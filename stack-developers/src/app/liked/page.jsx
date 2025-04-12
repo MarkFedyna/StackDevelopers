@@ -41,6 +41,7 @@ export default function LikedAnimalsPage() {
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
             {likedAnimals.map((animal) => (
               <Card
+                key={animal.id}
                 imageSrc={animal.image}
                 name={animal.name}
                 description={animal.description}
