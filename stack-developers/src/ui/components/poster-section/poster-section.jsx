@@ -1,17 +1,18 @@
-'use client';
 
-import { useEffect, useState } from 'react';
 import CardList from '@/src/ui/components/card-list/card-list';
 
-function PosterSection() {
-  const [cards, setCards] = useState([]);
+function getPosts() {
+  return fetch('http://localhost:3000/petsData.json')
+         .then(res => res.json())
+         .then(res => res.splice(-4))
+}
 
-  useEffect(() => {
-    fetch('/petsData.json')
-      .then((res) => res.json())
-      .then((data) => setCards(data.slice(0, 4)))
-      .catch((error) => console.error('Помилка при завантаженні JSON:', error));
-  }, []);
+
+async function PosterSection() {
+
+  const cards = await getPosts()
+
+
 
   return (
     <section className='flex flex-col justify-between text-center gap-10 pt-9 px-12 pb-24'>
