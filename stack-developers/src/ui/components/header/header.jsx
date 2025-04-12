@@ -58,7 +58,7 @@ function Header() {
         </Link>
 
         <div className={'flex gap-1.5'}>
-          <Link href={'/like'}>
+          <Link href={'/liked'}>
             {/* <Heart width={32} height={32} /> */}
             <svg
               width='32'
