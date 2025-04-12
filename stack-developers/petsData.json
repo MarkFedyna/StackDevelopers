@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Барон",
+    "description": "Собака, 2 роки",
+    "image": "dog1",
+    "id": "12ex74k"
+  },
+  {
+    "name": "Лорд",
+    "description": "Собака, 3 роки",
+    "image": "dog1",
+    "id": "12ex73k"
+  },
+  {
+    "name": "Джессі",
+    "description": "Собака, 1 рік",
+    "image": "dog1",
+    "id": "12ex72k"
+  },
+  {
+    "name": "Рокі",
+    "description": "Собака, 5 років",
+    "image": "dog1",
+    "id": "12ex71k"
+  },
+  {
+    "name": "Лайка",
+    "description": "Собака, 4 роки",
+    "image": "dog1",
+    "id": "12ex70k"
+  }
+]
