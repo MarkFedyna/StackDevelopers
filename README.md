@@ -1,82 +1,83 @@
-# 🐾 Дай Лапу
+# 🐾 Give a Paw ("Дай Лапу")
 
-Веб-додаток для пошуку, перегляду та підтримки тварин, які потребують допомоги. Проєкт розроблений для того, щоб зробити процес адапції та допомоги тваринам простішим і зручнішим для кожного користувача.
-
----
-
-## 🔍 Короткий опис
-
-"Дай Лапу" — це платформа, де користувачі можуть:
-- Переглядати оголошення тварин
-- Подавати ініціативи щодо допомоги
-- Зберігати улюблені тварини в обране
-- Шукати за описом або назвою
-- Зв’язуватись із притулками
+A web application for searching, viewing, and supporting animals in need. The project was developed to make the process of adopting and helping animals easier and more convenient for every user.
 
 ---
 
-# Посилавння на прототип у Figma
-[🔗 Переглянути прототип] https://www.figma.com/design/fNzjtOCyDpljhV6OvcbtXf/Untitled?node-id=0-1&t=8E8V53EciMgYi05V-1
+## 🔍 Short Description
+
+"Give a Paw" ("Дай лапу") is a platform where users can:
+- Browse animal listings
+- Submit initiatives to help
+- Save favorite animals
+- Search by description or name
+- Contact shelters directly
 
 ---
 
-## 🚀 Інструкція по запуску
+## 🎨 Figma Prototype
+[🔗 View the prototype](https://www.figma.com/design/fNzjtOCyDpljhV6OvcbtXf/Untitled?node-id=0-1&t=8E8V53EciMgYi05V-1)
 
-### Локально
+---
+
+## 🚀 Getting Started
+
+### Locally
 
 ```bash
-# Клонувати репозиторій
+# Clone the repository
 git clone https://github.com/MarkFedyna/StackDevelopers.git
 
-# Перейти на гілку з тестовим завданням
+# Switch to the test-task branch
 git switch test-task
 
-# Перейти в папку проєкту
+# Navigate to the project folder
 cd stack-developers
 
-# Встановити залежності
+# Install dependencies
 npm install
 
-# Запустити локальний сервер
+# Start the local development server
 npm run dev
 
 ---
 
-## 🛠️ Технології 
+## 🛠️ Technologies
 Next.js 14
-Tailwind CSS (For Responsive Design)
+Tailwind CSS (for responsive design)
 Lucide Icons
 JavaScript
-Shadcn (UI Components)
+Shadcn (UI components)
 React Icons
 
 ---
 
-## 🗂️ Структура проєкту
+## 🗂️ Project Structure
+
 📁 public/
-   └─ зображення тварин
+   └─ animal images
 
 📁 src/
-   ├─ components/           # Спільні компоненти UI
-   ├─ src/app/              # Роутинг сторінок Next.js
-   ├─ ui/                   # Модульні компоненти
-   └─ assets/               # Іконки
+   ├─ components/           # Shared UI components
+   ├─ app/                  # Next.js routing
+   ├─ ui/                   # Modular components
+   └─ assets/               # Icons
 
 ---
 
-## ✨ Особливості реалізації
-Адаптивний інтерфейс для всіх пристроїв (mobile-first)
-Реалізовано модальне вікно зв’язку
-Функціонал "Додати в обране" з візуальним індикатором
-Структурований та зручний пошук за ключовими словами
-Дизайн відповідає сучасним UX/UI практикам
+## ✨ Key Features
+Fully responsive design (mobile-first)
+Modal window for direct contact
+"Add to favorites" feature with visual indicator
+Clean, structured search by keywords
+UI/UX aligned with modern design practices
 
 ---
 
-## 🔧 Що можна покращити / далі реалізувати
-- Реалізувати повноцінну авторизацію з Firebase
-- Під’єднати реальний back-end
-- Розширити функціонал запитів
+## 🔧 Possible Improvements / Future Development
+Implement full Firebase authentication
+Connect a real back-end
+Expand functionality for submitting and editing listings
 
 ---
 
