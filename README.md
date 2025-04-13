@@ -78,6 +78,7 @@ npm run dev
 - Implement full Firebase authentication
 - Connect a real back-end
 - Expand functionality for submitting and editing listings
+- Unit test integration
 
 ---
 
