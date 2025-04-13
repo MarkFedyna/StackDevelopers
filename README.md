@@ -43,17 +43,17 @@ npm run dev
 ---
 
 ## 🛠️ Technologies
-Next.js 14
-Tailwind CSS (for responsive design)
-Lucide Icons
-JavaScript
-Shadcn (UI components)
-React Icons
+- Next.js 14
+- Tailwind CSS (for responsive design)
+- Lucide Icons
+- JavaScript
+- Shadcn (UI components)
+- React Icons
 
 ---
 
 ## 🗂️ Project Structure
-
+```
 📁 public/
    └─ animal images
 
@@ -62,33 +62,33 @@ React Icons
    ├─ app/                  # Next.js routing
    ├─ ui/                   # Modular components
    └─ assets/               # Icons
-
+```
 ---
 
 ## ✨ Key Features
-Fully responsive design (mobile-first)
-Modal window for direct contact
-"Add to favorites" feature with visual indicator
-Clean, structured search by keywords
-UI/UX aligned with modern design practices
+- Fully responsive design (mobile-first)
+- Modal window for direct contact
+- "Add to favorites" feature with visual indicator
+- Clean, structured search by keywords
+- UI/UX aligned with modern design practices
 
 ---
 
 ## 🔧 Possible Improvements / Future Development
-Implement full Firebase authentication
-Connect a real back-end
-Expand functionality for submitting and editing listings
+- Implement full Firebase authentication
+- Connect a real back-end
+- Expand functionality for submitting and editing listings
 
 ---
 
 ## 📩 Контакти 
-Команда: StackDevelopers
-Email: dmitrivostap8@gmail.com,
+- Команда: StackDevelopers
+- Email: dmitrivostap8@gmail.com,
        mihajlofedina5@gmail.com,
        andrr.choo@gmail.com,
        bohdanburban@gmail.com,
        markfedina5@gmail.com
-Telegram: @debiaLin,
+- Telegram: @debiaLin,
           @misha_fedyna,
           @papantttt,
           @BOGDank00,
