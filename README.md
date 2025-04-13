@@ -39,7 +39,7 @@ npm install
 
 # Start the local development server
 npm run dev
-
+```
 ---
 
 ## 🛠️ Technologies
